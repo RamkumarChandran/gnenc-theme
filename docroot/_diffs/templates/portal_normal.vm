@@ -18,7 +18,7 @@ $theme.include($body_top_include)
 	#dockbar()
 #end
 
-<div id="bg_gradient">
+<div id="bg_gradient" class="bg_gradient">
 </div>
 
 <div id="wrapper">

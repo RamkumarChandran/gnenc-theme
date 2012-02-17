@@ -1,0 +1,9 @@
+.yellow .bg_gradient {
+	background: url(../../images/color_schemes/yellow/bg_gradient_small.png) repeat-x;
+	height: 275px;
+	position: fixed;
+	right: 0;
+	top: 315px;
+	left: 0px;
+	z-index: -1000;
+}
