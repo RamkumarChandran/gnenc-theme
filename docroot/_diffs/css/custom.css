@@ -6,7 +6,7 @@
 #heading .community-title,
 #heading .page-title, 
 #navigation h1,
-#breadcrumbs {
+#breadcrumbs h1 {
 	clip: rect(0 0 0 0);
 	position: absolute;
 }
@@ -33,24 +33,64 @@ body {
 
 #heading,
 #content,
-#navigation ul {
+#navigation {
 	min-width: 960px;
 	max-width: 80%;
 	margin: auto;
 }
 
-#heading img {
+#heading h1 a {
 	box-shadow: 2px 2px 10px 1px #656565;
 	border-radius: 10px;
 	padding: 10px;
 	background-color: white;
+	text-decoration: none;
+	font-size: .9em;
 }
 
-#greeting {
+#heading h1 a:link,
+#heading h1 a:hover,
+#heading h1 a:visited {
+	text-decoration: none;
+	color: #656565;
+}
+
+#heading .site-name {
+	border-top: 1px solid #656565;
+	padding-top: 2px;
+	margin-bottom: -6px;
+}
+
+#heading .site-name {
+	display: block;
+	text-align: center;
+}
+
+#heading .right-align {
 	float: right;
+	text-align: right;
 	font-size: 1.1em;
 	padding: 15px 5px;
-	max-width: 220px;
+	max-width: 250px;
+}
+
+#heading #greeting, 
+#heading #language {
+	display: block;
+	padding-top: 5px;
+}
+
+#heading #greeting {
+	text-align: center;
+}
+
+#heading #language {
+	font-weight: bold;
+}
+
+.nav_search {
+	float: right;
+	padding-top: 13px;
 }
 
 #navigation .selected a, 
@@ -65,9 +105,10 @@ body {
   text-shadow: -1px -1px black; 
 }
 
-#navigation {
+#navigation_bg {
 	background: url("../images/nav-bg.png") repeat-x;
-	height: 50px;
+	background-size: contain;
+	min-height: 50px;
 }
 
 #navigation a {
@@ -80,6 +121,7 @@ body {
 #navigation li {
 	display: inline-block;
 	padding: 10px 20px;
+	margin: 1px 0px;
 	border-radius: 3px;
 }
 
@@ -95,7 +137,36 @@ body {
 #navigation ul {
 	list-style: none;
 	margin: auto;
-	padding: 6px;
+	padding: 6px 350px 6px 0px;
+}
+
+.site-breadcrumbs {
+	margin: 0 0 5px;
+	width: auto;
+	padding: 5px 0px;
+}
+
+.site-breadcrumbs ul {
+	background-color: white;
+	border-radius: 3px;
+	margin: 0;
+	box-shadow: inset 1px 1px 2px 0px #A8A8A8;
+}
+
+.breadcrumbs li {
+	display: inline-block;
+	max-width: 50%;
+	vertical-align: middle;
+}
+
+.breadcrumbs li span {
+	background: url(../images/common/breadcrumbs.png) no-repeat 100% 50%;
+	display: block;
+	padding: .5em 15px .5em 10px;
+}
+
+.breadcrumb li.first {
+	display: none;
 }
 
 .portlet {
@@ -126,7 +197,6 @@ body {
 
 #sign-in {
 	background: url(../images/common/key.png) no-repeat 3px 50%;
-	float:right;
 	padding: 5px 5px 5px 25px;
 	text-decoration: none;
 	font-size: 1.1em;
@@ -135,5 +205,5 @@ body {
 }
 
 .lfr-portlet-title-editable {
-	top: 238px !important;
+	top: 315px !important;
 }
