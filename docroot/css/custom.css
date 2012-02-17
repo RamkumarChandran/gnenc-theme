@@ -2,6 +2,7 @@
 @import url(color_schemes/yellow.css);
 @import url(color_schemes/blue.css);
 
+/* Basic page setup */
 #skip-to-content,
 #heading .community-title,
 #heading .page-title, 
@@ -23,20 +24,17 @@ body {
 	box-shadow: 2px 2px 10px 1px black;
 }
 
-#heading {
-	padding: 1px 25px;
-}
-
-#content {
-	padding-bottom: 25px;
-}
-
 #heading,
 #content,
 #navigation {
 	min-width: 960px;
 	max-width: 80%;
 	margin: auto;
+}
+
+/* Heading styles */
+#heading {
+	padding: 1px 25px;
 }
 
 #heading h1 a {
@@ -88,11 +86,14 @@ body {
 	font-weight: bold;
 }
 
-.nav_search {
-	float: right;
-	padding-top: 13px;
+#sign-in {
+	background: url(../images/common/key.png) no-repeat 3px 50%;
+	padding: 5px 5px 5px 25px;
+	font-weight: bold;
+	color: black;
 }
 
+/* Navigation styles */
 #navigation .selected a, 
 #navigation li.hover a, 
 #navigation a:hover, 
@@ -103,6 +104,11 @@ body {
   color: #FFF;
   outline: 0;
   text-shadow: -1px -1px black; 
+}
+
+.nav_search {
+	float: right;
+	padding-top: 13px;
 }
 
 #navigation_bg {
@@ -140,6 +146,7 @@ body {
 	padding: 6px 350px 6px 0px;
 }
 
+/* Breadcrumb styles */
 .site-breadcrumbs {
 	margin: 0 0 5px;
 	width: auto;
@@ -169,6 +176,11 @@ body {
 	display: none;
 }
 
+/* Content styles */
+#content {
+	padding-bottom: 25px;
+}
+
 .portlet {
   	background-color: white;
   	border: 1px solid #C8C9CA;
@@ -193,15 +205,6 @@ body {
   	border-radius: 3px;
   	border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
   	font-size: 1.1em;
-}
-
-#sign-in {
-	background: url(../images/common/key.png) no-repeat 3px 50%;
-	padding: 5px 5px 5px 25px;
-	text-decoration: none;
-	font-size: 1.1em;
-	font-weight: bold;
-	color: black;
 }
 
 .lfr-portlet-title-editable {
