@@ -8,7 +8,32 @@
 }
 
 body {
+	background-color: white;
+}
+
+#bg_gradient {
+	background: url("../images/bg_gradient_small.png") repeat-x;
+	height: 275px;
+	position: fixed;
+	right: 0;
+	top: 315px;
+	left: 0px;
+	z-index: -1000;
+}
+
+#heading,
+#content {
 	background-color: #EEF0F2;
+	padding: 0px 25px;
+	box-shadow: 2px 2px 10px 1px black;
+}
+
+#heading {
+	padding: 1px 25px;
+}
+
+#content {
+	padding-bottom: 25px;
 }
 
 #heading,
@@ -21,10 +46,16 @@ body {
 
 #heading img {
 	box-shadow: 2px 2px 10px 1px #656565;
-	margin-left: 15px;
 	border-radius: 10px;
 	padding: 10px;
 	background-color: white;
+}
+
+#greeting {
+	float: right;
+	font-size: 1.3em;
+	padding: 15px 5px;
+	max-width: 220px;
 }
 
 #navigation .selected a, 
@@ -106,4 +137,8 @@ body {
 	font-size: 1.3em;
 	font-weight: bold;
 	color: black;
+}
+
+.lfr-portlet-title-editable {
+	top: 238px !important;
 }
