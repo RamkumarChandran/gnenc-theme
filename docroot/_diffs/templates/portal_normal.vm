@@ -18,6 +18,9 @@ $theme.include($body_top_include)
 	#dockbar()
 #end
 
+<div id="bg_gradient">
+</div>
+
 <div id="wrapper">
 	<a href="#main-content" id="skip-to-content">#language("skip-to-content")</a>
 
@@ -26,6 +29,12 @@ $theme.include($body_top_include)
 			#if (!$is_signed_in)
 				<a href="$sign_in_url" id="sign-in" rel="nofollow">$sign_in_text</a>
 			#end
+			
+			<div id="greeting">
+				#if ($is_signed_in)
+					$user_greeting
+				#end
+			</div>
 		
 			<h1 class="site-title">
 				<a class="$logo_css_class" href="$site_default_url" title="#language("go-to") $site_name">
