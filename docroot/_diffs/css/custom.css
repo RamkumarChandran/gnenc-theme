@@ -1,3 +1,7 @@
+/* Color scheme imports */
+@import url(color_schemes/yellow.css);
+@import url(color_schemes/blue.css);
+
 #skip-to-content,
 #heading .community-title,
 #heading .page-title, 
@@ -9,16 +13,7 @@
 
 body {
 	background-color: white;
-}
-
-#bg_gradient {
-	background: url("../images/bg_gradient_small.png") repeat-x;
-	height: 275px;
-	position: fixed;
-	right: 0;
-	top: 315px;
-	left: 0px;
-	z-index: -1000;
+	font: 75%/1.4 Arial, Helvetica, Verdana, sans-serif;
 }
 
 #heading,
@@ -53,7 +48,7 @@ body {
 
 #greeting {
 	float: right;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	padding: 15px 5px;
 	max-width: 220px;
 }
@@ -77,7 +72,7 @@ body {
 
 #navigation a {
 	color: white;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-weight: bold;
 	text-decoration: none;
 }
@@ -126,7 +121,7 @@ body {
   	border: 1px solid black;
   	border-radius: 3px;
   	border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
-  	font-size: 1.3em;
+  	font-size: 1.1em;
 }
 
 #sign-in {
@@ -134,7 +129,7 @@ body {
 	float:right;
 	padding: 5px 5px 5px 25px;
 	text-decoration: none;
-	font-size: 1.3em;
+	font-size: 1.1em;
 	font-weight: bold;
 	color: black;
 }
