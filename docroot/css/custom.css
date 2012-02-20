@@ -178,7 +178,10 @@ body {
 
 /* Content styles */
 #content {
+	position: relative;
+	top: -2px;
 	padding-bottom: 25px;
+	z-index: -1;
 }
 
 .portlet {
