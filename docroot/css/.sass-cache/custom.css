@@ -1,28 +1,99 @@
+/* Color scheme imports */
+/* Yellow color scheme styles */
+.yellow .bg_gradient {
+  background: url(../images/color_schemes/yellow/bg_gradient_small.png) repeat-x;
+  height: 275px;
+  position: fixed;
+  right: 0;
+  top: 315px;
+  left: 0px;
+  z-index: -1000; }
+
+/* Blue color scheme styles */
+.blue .bg_gradient {
+  background: url("../images/color_schemes/blue/bg_gradient_small.png") repeat-x;
+  height: 275px;
+  position: fixed;
+  right: 0;
+  top: 315px;
+  left: 0px;
+  z-index: -1000; }
+
+/* Basic page setup */
 #skip-to-content,
 #heading .community-title,
 #heading .page-title,
 #navigation h1,
-#breadcrumbs {
+#breadcrumbs h1 {
   clip: rect(0 0 0 0);
   position: absolute; }
 
 body {
-  background-color: #EEF0F2; }
+  background-color: white;
+  font: 75%/1.4 Arial, Helvetica, Verdana, sans-serif; }
+
+#heading,
+#content {
+  background-color: #EEF0F2;
+  padding: 0px 25px;
+  box-shadow: 2px 2px 10px 1px black; }
 
 #heading,
 #content,
-#navigation ul {
+#navigation {
   min-width: 960px;
-  max-width: 90%;
+  max-width: 80%;
   margin: auto; }
 
-#heading img {
-  box-shadow: 2px 2px 10px 1px #656565;
-  margin-left: 15px;
-  border-radius: 10px;
-  padding: 10px;
-  background-color: white; }
+/* Heading styles */
+#heading {
+  padding: 1px 25px; }
 
+#heading h1 a {
+  text-decoration: none;
+  font-size: .9em; }
+
+#heading h1 a:link,
+#heading h1 a:hover,
+#heading h1 a:visited {
+  text-decoration: none;
+  color: #656565; }
+
+#heading .site-name {
+  border-top: 1px solid #656565;
+  padding-top: 2px;
+  margin-bottom: -6px;
+  display: block;
+  text-align: center; }
+
+#heading .site-title {
+  margin: 15px; }
+
+#heading .right-align {
+  float: right;
+  text-align: right;
+  font-size: 1.1em;
+  padding: 15px 5px;
+  max-width: 250px; }
+
+#heading #greeting,
+#heading #language {
+  display: block;
+  padding-top: 5px; }
+
+#heading #greeting {
+  text-align: center; }
+
+#heading #language {
+  font-weight: bold; }
+
+#sign-in {
+  background: url(../images/common/key.png) no-repeat 3px 50%;
+  padding: 5px 5px 5px 25px;
+  font-weight: bold;
+  color: black; }
+
+/* Navigation styles */
 #navigation .selected a,
 #navigation li.hover a,
 #navigation a:hover,
@@ -34,19 +105,25 @@ body {
   outline: 0;
   text-shadow: -1px -1px black; }
 
-#navigation {
+.nav_search {
+  float: right;
+  padding-top: 13px; }
+
+#navigation_bg {
   background: url("../images/nav-bg.png") repeat-x;
-  height: 50px; }
+  background-size: contain;
+  min-height: 50px; }
 
 #navigation a {
   color: white;
-  font-size: 1.3em;
+  font-size: 1.1em;
   font-weight: bold;
   text-decoration: none; }
 
 #navigation li {
   display: inline-block;
   padding: 10px 20px;
+  margin: 1px 0px;
   border-radius: 3px; }
 
 #navigation li:hover {
@@ -59,20 +136,60 @@ body {
 #navigation ul {
   list-style: none;
   margin: auto;
-  padding: 6px; }
+  padding: 6px 350px 6px 0px; }
+
+/* Breadcrumb styles */
+.site-breadcrumbs {
+  margin: 0 0 5px;
+  width: auto;
+  padding: 5px 0px; }
+
+.site-breadcrumbs ul {
+  background-color: white;
+  border-radius: 3px;
+  margin: 0;
+  box-shadow: inset 1px 1px 2px 0px #A8A8A8; }
+
+.breadcrumbs li {
+  display: inline-block;
+  max-width: 50%;
+  vertical-align: middle; }
+
+.breadcrumbs li span {
+  background: url(../images/common/breadcrumbs.png) no-repeat 100% 50%;
+  display: block;
+  padding: .5em 15px .5em 10px; }
+
+.breadcrumb li.first {
+  display: none; }
+
+/* Content styles */
+#content {
+  padding-bottom: 25px; }
+
+.portlet {
+  background-color: white;
+  border: 1px solid #C8C9CA;
+  box-shadow: 2px 2px 10px 1px #656565;
+  border-radius: 3px;
+  margin: 0 0 10px;
+  padding: 3px;
+  text-align: left; }
+
+.portlet-title {
+  float: none;
+  font-weight: bold;
+  min-width: 50%;
+  padding: 5px;
+  text-shadow: 1px 1px #FFF; }
 
 .portlet-topper {
   background: #d4d4d4 url(../images/portlet/header_bg.png) repeat-x 0 0;
-  border: 1px solid;
+  border: 1px solid black;
+  border-radius: 3px;
   border-color: #C8C9CA #9E9E9E #9E9E9E #C8C9CA;
   font-size: 1.1em; }
 
-#sign-in {
-  background: url(../images/common/key.png) no-repeat 3px 50%;
-  float: right;
-  padding: 5px 5px 5px 25px;
-  text-decoration: none;
-  font-size: 1.3em;
-  font-weight: bold;
-  color: black; }
+.lfr-portlet-title-editable {
+  top: 315px !important; }
 
