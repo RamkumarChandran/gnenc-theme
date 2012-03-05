@@ -165,7 +165,10 @@ body {
 
 /* Content styles */
 #content {
-  padding-bottom: 25px; }
+  position: relative;
+  top: -2px;
+  padding-bottom: 25px;
+  z-index: -1; }
 
 .portlet {
   background-color: white;
