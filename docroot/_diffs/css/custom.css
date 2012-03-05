@@ -38,10 +38,6 @@ body {
 }
 
 #heading h1 a {
-	box-shadow: 2px 2px 10px 1px #656565;
-	border-radius: 10px;
-	padding: 10px;
-	background-color: white;
 	text-decoration: none;
 	font-size: .9em;
 }
@@ -57,11 +53,12 @@ body {
 	border-top: 1px solid #656565;
 	padding-top: 2px;
 	margin-bottom: -6px;
-}
-
-#heading .site-name {
 	display: block;
 	text-align: center;
+}
+
+#heading .site-title {
+	margin: 15px;
 }
 
 #heading .right-align {
