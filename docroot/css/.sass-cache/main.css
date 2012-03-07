@@ -2146,6 +2146,8 @@ body {
 
 /* Content styles */
 #content {
+  position: relative;
+  top: -2px;
   padding-bottom: 25px; }
 
 .portlet {
