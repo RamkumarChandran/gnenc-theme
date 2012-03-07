@@ -2148,8 +2148,7 @@ body {
 #content {
   position: relative;
   top: -2px;
-  padding-bottom: 25px;
-  z-index: -1; }
+  padding-bottom: 25px; }
 
 .portlet {
   background-color: white;
